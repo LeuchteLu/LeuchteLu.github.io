@@ -1,45 +1,174 @@
+<!DOCTYPE HTML>
+
 <html>
-<head>
-    <title>Canvas Fingerprinting Demo</title>
-    <script src="fingerprint.js"></script>
-</head>
-<body>
-<div style="text-align: center;">
-    <h3 style="margin-top: 60px">Fingerprint with drawing canvas</h3>
-    <h1 id="withCanvasDrawing"></h1>
-</div>
-<div style="text-align: center;">
-    <h3 style="margin-top: 20px">Fingerprint without drawing canvas, metadata only:</h3>
-    <h1 id="withoutCanvasDrawing"></h1>
-</div>
+	<head>
+		<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
 
-<div style="text-align: center;">
-    <h3 style="margin-top: 20px">Fingerprint with Java hash code:</h3>
-    <h1 id="FingerPrintWithJavaHashCode"></h1>
-</div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<script>
-    var withCanvasDrawing = new Fingerprint({canvas: true});
-    var withoutCanvasDrawing = new Fingerprint({canvas: false});
-    document.getElementById('withCanvasDrawing').innerHTML = withCanvasDrawing.get();
-    document.getElementById('withoutCanvasDrawing').innerHTML = withoutCanvasDrawing.get();
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">FINGER PRINT</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#one" class="scrolly">Abstruct</a></li>
+											<li><a href="#cta" class="scrolly">Contect Us</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-    var javaHashCode = function(string, K) {
-        var hash = 0;
-        if (string.length === 0) {
-            return hash;
-        }
-        for (var i = 0; i < string.length; i++) {
-            char = string.charCodeAt(i);
-            hash = K*((hash<<5)-hash)+char;
-            hash = hash & hash;
-        }
-        return hash;
-    };
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Finger Print</h2>
+							<p>device finger print<br>
+							  capture based on<br>
+							  HTML5 apis.</p>
+							<ul class="actions">
+							  <li><a href="fingerprint.html" class="button special">Get your Finger Print</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-    var javaHashFunction = new Fingerprint({hasher: javaHashCode});
-    document.getElementById('FingerPrintWithJavaHashCode').innerHTML = javaHashFunction.get();
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What is device finger print?</h2>
+                                <div class="align-left">
+								<p>Device fingerprint identification (sometimes called PC fingerprint identification) is part of a broader technology called device intelligence to determine whether the computer you use should be trusted. Device fingerprinting is the measurement of anonymous browsers, operating systems, and connection properties to generate risk files for the device in real time. Device fingerprinting is a new way to distinguish valuable customers from professional fraudsters.</p>
+								<p>The prevalence of theft and hacking these days means it's very difficult to verify who you're dealing with. The new client could be a computer puppet representing an eastern European criminal gang, or a kleptomaniac who believes that facebook stole personal information. Obviously, online authentication is a huge challenge for all entrepreneurs.</p> </div>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-desktop major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-code major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-unlock major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+                  <!--  <div class="chs">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div> -->
 
-</script>
-</body>
+				<!-- Two
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>Magna primis lobortis<br />
+								sed ullamcorper</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Tortor dolore feugiat<br />
+								elementum magna</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Augue eleifend aliquet<br />
+								sed condimentum</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+					</section>  -->  
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Related technologies</h2>
+                                <div class="align-left">
+								<p>The fingerprint of devices on the Internet has attracted extensive attention from research institutions and commercial markets. To date, almost all fingerprint features have been dependent on software running on the device, so that they can be changed by the user, thereby impeding access to the device's fingerprint. Based on this question, we believe that the nascent HTML5 standard has spawned a new class of hardware-based fingerprint features. Such features are harder to conceal or change, providing a higher degree of confidence for fingerprint identification. We propose several possible fingerprint methods that are implemented by allowing HTML5 Web applications to identify the device's hardware.</p>
+                                </div>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>Cookie</h3>
+									<p>Created by NetScape, a small piece of data stored on a user's local terminal memory or disk can only hold string types, and all Cookie information is sent at the request of the browser.</p>
+								</li>
+								<li class="icon fa-user">
+									<h3>UserData</h3>
+									<p>Introduced by Microsoft in IE5.0, the term refers to a piece of persistent string data stored at the user's local terminal. The data will be kept until the expiry time is manually deleted or set. Only ie5.0-ie9.0 is supported.</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>Flash Shared Object</h3>
+									<p>It allows you to store all flash supported data on your local client's hard drive or server. The data will be stored permanently, with no expiration time, and can be cleared by setting the manager or calling clear().</p>
+								</li>
+								<li class="icon fa-eye">
+									<h3>Google Gears</h3>
+									<p>An open source browser plugin released by Google in 2007 has an embedded SQL database based on SQLite and provides a unified API to access the database. After obtaining user authorization, each site can store unlimited data in the database.</p>
+								</li>
+								<li class="icon fa-folder">
+									<h3>WebStorge</h3>
+									<p>Webstorage is a new tag of HTML5, which is one of the solutions of localStorage, including sessionStorage and localStorage.</p>
+								</li>
+								<li class="icon fa-repeat">
+									<h3>SimHash</h3>
+									<p>Simhash is a locally sensitive hash. So what is local sensitivity? Suppose you have a certain similarity between two strings, and you can still maintain that after the hash. It is used by Google to re-weight vast amounts of text.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>CONTACT US</h2>
+								<p>If you want to support us or have any confusion, please email us.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="mailto:16281260@bjtu.edu.cn" class="button special fit">SEND TO LU</a></li>
+                                <li><a href="mailto:16281229@bjtu.edu.cn" class="button fit">SEND TO LIU</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+						  <li>&copy; LU TAOTAO</li>
+						  <li>LIU YUNPENG</li>
+                          <li>HAN HAOJIE</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
