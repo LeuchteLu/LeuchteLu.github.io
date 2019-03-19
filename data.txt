@@ -1,0 +1,9 @@
+software version:ClientJS 0.1.5
+User Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+User Agent String:mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/69.0.3497.100 safari/537.36
+browser:Chrome
+OS:Windows
+CPU:amd64
+color depth:24
+current resolution:1920x1080
+language:zh-CN
