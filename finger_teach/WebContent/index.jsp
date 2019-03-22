@@ -359,7 +359,7 @@
 	    		url : "/finger_teach/test",
 	    		data : {'informations':JSON.stringify(list)},
 	    		dataType : "json",
-	    		type : 'post',
+	    		type : 'get',
 	    		success: function(msg) {
 	    			alert(msg);
 	    			document.getElementById("hash").innerHTML = msg;
